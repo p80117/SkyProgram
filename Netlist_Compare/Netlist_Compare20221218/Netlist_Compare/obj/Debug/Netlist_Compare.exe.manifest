@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Netlist_Compare.exe" size="42424">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Netlist_Compare.exe" size="42912">
       <assemblyIdentity name="Netlist_Compare" version="2022.9.4.1" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>qe/U1FLItVouUumaeiWmMcRg93zAC9wpiYPkUVAX6YQ=</dsig:DigestValue>
+        <dsig:DigestValue>nb4p/W4AgYmOe38aEbTRy80/QAR1+LdbSkk6aKhmxK4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

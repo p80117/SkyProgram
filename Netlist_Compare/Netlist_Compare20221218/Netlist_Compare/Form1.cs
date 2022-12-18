@@ -616,18 +616,23 @@ namespace Netlist_Compare
 								{
 									//string Old_Temp_Value;
 									int New_Row = -1; //check find bit is done
+                                    bool CheckNet = false;
+
 									New_Temp_Value = Item_Value1[Old_Array_i].Trim();
-									
-									for (int New_Array_i = 0; New_Array_i < Item_Value2.Length; New_Array_i++)  //find New array location
-									{
-										if (Item_Value2[New_Array_i].Trim() == New_Temp_Value)
-										{
-											New_Row++;
-											break;
-										}
-									}
+
+                                    CheckNet = Array.Exists(Item_Value2, x => x == New_Temp_Value);    //find New array location 2022.12.18
+
+         //                           for (int New_Array_i = 0; New_Array_i < Item_Value2.Length; New_Array_i++)  //find New array location
+									//{
+									//	if (Item_Value2[New_Array_i].Trim() == New_Temp_Value)
+									//	{
+									//		New_Row++;
+									//		break;
+									//	}
+									//}
+
 									//excelApp.Cells[i + 2, j + 1 + 4] = New_Temp_Value;
-									if (New_Row < 0)
+									if(CheckNet==false)// if(New_Row < 0) //2022.12.18
 									{
 										wSheet.Cells[i + 2, 1 + 1 + 7].Characters[start_pos_array, New_Temp_Value.Length].Font.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.Blue);
 										wSheet.Cells[i + 2, 1 + 1 + 7].Characters[start_pos_array, New_Temp_Value.Length].Font.FontStyle = "bold";
@@ -640,18 +645,20 @@ namespace Netlist_Compare
 								{
 									//string Old_Temp_Value;
 									int New_Row = -1; //check find bit is done
-									New_Temp_Value = Item_Value2[New_Array_i].Trim();
+                                    bool CheckNet = false;
+                                    New_Temp_Value = Item_Value2[New_Array_i].Trim();
 
-									for (int Old_Array_i = 0; Old_Array_i < Item_Value1.Length; Old_Array_i++)  //find New array location
-									{
-										if (Item_Value1[Old_Array_i].Trim() == New_Temp_Value)
-										{
-											New_Row++;
-											break;
-										}
-									}
-									//excelApp.Cells[i + 2, j + 1 + 4] = New_Temp_Value;
-									if (New_Row < 0)
+                                    CheckNet = Array.Exists(Item_Value1, x => x == New_Temp_Value);    //find New array location 2022.12.18
+         //                           for (int Old_Array_i = 0; Old_Array_i < Item_Value1.Length; Old_Array_i++)  //find New array location
+									//{
+									//	if (Item_Value1[Old_Array_i].Trim() == New_Temp_Value)
+									//	{
+									//		New_Row++;
+									//		break;
+									//	}
+									//}
+									////excelApp.Cells[i + 2, j + 1 + 4] = New_Temp_Value;
+									if(CheckNet==false)// if(New_Row < 0) //2022.12.18
 									{
 										wSheet.Cells[i + 2, 1 + 1 + 9].Characters[start_pos_array, New_Temp_Value.Length].Font.Color = System.Drawing.ColorTranslator.ToOle(System.Drawing.Color.Blue);
 										wSheet.Cells[i + 2, 1 + 1 + 9].Characters[start_pos_array, New_Temp_Value.Length].Font.FontStyle = "bold";
