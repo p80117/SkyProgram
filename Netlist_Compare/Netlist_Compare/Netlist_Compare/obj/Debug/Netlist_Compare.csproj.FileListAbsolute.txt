@@ -1,0 +1,8 @@
+C:\Users\sky\Desktop\TestProgram\Netlist_Compare\Netlist_Compare\bin\Debug\Netlist_Compare.exe.config
+C:\Users\sky\Desktop\TestProgram\Netlist_Compare\Netlist_Compare\bin\Debug\Netlist_Compare.exe
+C:\Users\sky\Desktop\TestProgram\Netlist_Compare\Netlist_Compare\bin\Debug\Netlist_Compare.pdb
+C:\Users\sky\Desktop\TestProgram\Netlist_Compare\Netlist_Compare\obj\Debug\Netlist_Compare.Form1.resources
+C:\Users\sky\Desktop\TestProgram\Netlist_Compare\Netlist_Compare\obj\Debug\Netlist_Compare.Properties.Resources.resources
+C:\Users\sky\Desktop\TestProgram\Netlist_Compare\Netlist_Compare\obj\Debug\Netlist_Compare.csproj.GenerateResource.cache
+C:\Users\sky\Desktop\TestProgram\Netlist_Compare\Netlist_Compare\obj\Debug\Netlist_Compare.exe
+C:\Users\sky\Desktop\TestProgram\Netlist_Compare\Netlist_Compare\obj\Debug\Netlist_Compare.pdb
